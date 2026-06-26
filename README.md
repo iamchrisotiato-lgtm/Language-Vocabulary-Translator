@@ -1,6 +1,14 @@
 # Language-Vocabulary-Translator
 A simple console-based Swedish-English vocabulary trainer built with Python.
 
+## Features
+
+- Loads words from a JSON file
+- Supports Swedish to English practice
+- Supports English to Swedish practice
+- Shows correct and incorrect answers
+- Gives a final score summary
+
 A lightweight, console-based vocabulary practice application for language learning. Currently configured for Swedish ⟷ English translation, but easily adaptable to any language pair.
 
 🎯 Overview
