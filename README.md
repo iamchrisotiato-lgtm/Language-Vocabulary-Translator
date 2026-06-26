@@ -14,58 +14,39 @@ The application is perfect for:
 
 ## Features
 Core Functionality
-✅ Loads words from a JSON file
-✅ Bidirectional Translation Practice: Practice Swedish → English or English → Swedish
-✅ Interactive Quiz Interface: One word at a time with immediate feedback
-✅ Smart Answer Checking: Case-insensitive matching with support for multiple correct answers
-✅ Shows correct and incorrect answers
-✅ Progress Tracking: Real-time progress display (e.g., "Word 5 of 10")
-✅ Gives a final score summary Statistics: Comprehensive summary with correct/incorrect counts and percentage score
+- ✅ Loads words from a JSON file
+- ✅ Bidirectional Translation Practice: Practice Swedish → English or English → Swedish
+- ✅ Interactive Quiz Interface: One word at a time with immediate feedback
+- ✅ Smart Answer Checking: Case-insensitive matching with support for multiple correct answers
+- ✅ Shows correct and incorrect answers
+- ✅ Progress Tracking: Real-time progress display (e.g., "Word 5 of 10")
+- ✅ Gives a final score summary Statistics: Comprehensive summary with correct/incorrect counts and percentage score
 
 
-User Experience
-✅ Randomized Word Order: Words are shuffled for each session to improve retention
-✅ Skip Functionality: Skip difficult words and see the correct answer
-✅ Early Exit: End sessions anytime with quit command
-✅ Clean Terminal UI: Simple, distraction-free interface with Unicode symbols
+## User Experience
+- ✅ Randomized Word Order: Words are shuffled for each session to improve retention
+- ✅ Skip Functionality: Skip difficult words and see the correct answer
+- ✅ Early Exit: End sessions anytime with quit command
+- ✅ Clean Terminal UI: Simple, distraction-free interface with Unicode symbols
 
-Flexibility
-✅ JSON-Based Storage: Human-readable data format that's easy to edit
-✅ Multiple Answer Variants: Support for synonyms (e.g., "hello / hi / hey")
-✅ UTF-8 Support: Full support for special characters (å, ä, ö, ñ, etc.)
-✅ No External Dependencies: Uses only Python standard library
+## Flexibility
+- ✅ JSON-Based Storage: Human-readable data format that's easy to edit
+- ✅ Multiple Answer Variants: Support for synonyms (e.g., "hello / hi / hey")
+- ✅ UTF-8 Support: Full support for special characters (å, ä, ö, ñ, etc.)
+- ✅ No External Dependencies: Uses only Python standard library
 
-🛠️ Technologies & Tools
-Programming Language
-Python 3.6+: Core language for the application
-Standard Library Modules Used
-json: Reading and writing vocabulary data to JSON files
+## Technologies & Tools
+Programming Language: Python 3.6+: Core language for the application
+Standard Library Modules Used: json: Reading and writing vocabulary data to JSON files
 random: Shuffling word order for randomized practice sessions
 os: File system operations and path handling
 Data Format
 JSON: Lightweight, human-readable data storage format for vocabulary
-Development Tools
+## Development Tools
 Git: Version control
 UTF-8 Encoding: For international character support
 
-📥 Installation
-Prerequisites
-Python 3.6 or higher installed on your system
-No external packages or dependencies required!
-Steps
-Clone the repository:
-bash
-Copy
-git clone https://github.com/YOUR_USERNAME/simple-vocab-trainer.git
-cd simple-vocab-trainer
-Verify Python installation:
-bash
-Copy
-python3 --version
-Should output Python 3.6.0 or higher.
-That's it! No additional installation needed.
-
-💾 Data Storage
+## Data Storage
 Storage Format: JSON
 The application uses JSON (JavaScript Object Notation) for data storage, providing a simple, human-readable format that's easy to edit and maintain.
 
