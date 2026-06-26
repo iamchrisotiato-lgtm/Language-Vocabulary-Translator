@@ -1,34 +1,27 @@
 # Language-Vocabulary-Translator
-A simple console-based Swedish-English vocabulary trainer built with Python.
+A simple console-based language vocabulary trainer and practice application for language learning built with Python. Currently configured for Swedish ⟷ English translation, but easily adaptable to any language pair.
 
-## Features
-
-- Loads words from a JSON file
-- Supports Swedish to English practice
-- Supports English to Swedish practice
-- Shows correct and incorrect answers
-- Gives a final score summary
-
-A lightweight, console-based vocabulary practice application for language learning. Currently configured for Swedish ⟷ English translation, but easily adaptable to any language pair.
-
-🎯 Overview
+## Overview
 Simple Vocabulary Trainer is a minimalist, terminal-based application designed to help language learners practice vocabulary translation. It provides an interactive quiz-style interface where users translate words between two languages, receive immediate feedback, and track their progress.
 
 The application is perfect for:
 
-Daily vocabulary practice
-Quick review sessions
-Building muscle memory for common words
-Self-paced language learning
-Offline vocabulary training
+- Daily vocabulary practice
+- Quick review sessions
+- Building muscle memory for common words
+- Self-paced language learning
+- Offline vocabulary training
 
-✨ Features
+## Features
 Core Functionality
+✅ Loads words from a JSON file
 ✅ Bidirectional Translation Practice: Practice Swedish → English or English → Swedish
 ✅ Interactive Quiz Interface: One word at a time with immediate feedback
 ✅ Smart Answer Checking: Case-insensitive matching with support for multiple correct answers
+✅ Shows correct and incorrect answers
 ✅ Progress Tracking: Real-time progress display (e.g., "Word 5 of 10")
-✅ Session Statistics: Comprehensive summary with correct/incorrect counts and percentage score
+✅ Gives a final score summary Statistics: Comprehensive summary with correct/incorrect counts and percentage score
+
 
 User Experience
 ✅ Randomized Word Order: Words are shuffled for each session to improve retention
