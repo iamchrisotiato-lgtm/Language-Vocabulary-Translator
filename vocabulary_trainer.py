@@ -20,7 +20,7 @@ def load_vocabulary(filename="vocabulary.json"):
 def normalize_answer(text):
     return text.lower().strip()
 
-# CHECK IS ANSWER MATCHES THE CORRECT ANSWER. 
+# CHECK IF ANSWER MATCHES THE CORRECT ANSWER. 
 def check_answer(user_answer, correct_answer):
     #Normalize both answers
     user = normalize_answer(user_answer)
@@ -75,15 +75,15 @@ def practice_session(words, direction='swedish-english'):
             break
         
         if user_answer.lower() == 'skip':
-            print(f"⊘ Skipped (Correct answer: {correct_answer})")
+            print(f"⏭ Skipped (Correct answer: {correct_answer})")
             continue
         
         # Check answer
         if check_answer(user_answer, correct_answer):
-            print("✓ Correct!")
+            print("✅ Correct!")
             correct_count += 1
         else:
-            print(f"✗ Incorrect. The correct answer is: {correct_answer}")
+            print(f"❌ Incorrect. The correct answer is: {correct_answer}")
             incorrect_count += 1
     
     # Show final results
