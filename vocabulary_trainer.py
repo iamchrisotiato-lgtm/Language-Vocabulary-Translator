@@ -44,6 +44,8 @@ def practice_session(words, direction='swedish-english'):
     
     correct_count = 0
     incorrect_count = 0
+    wrong_answers = []
+    skipped_answers = []
     total = len(practice_words)
     
     print("\n" + "="*50)
@@ -76,6 +78,7 @@ def practice_session(words, direction='swedish-english'):
         
         if user_answer.lower() == 'skip':
             print(f"⏭ Skipped (Correct answer: {correct_answer})")
+            skipped_answers.append((question, correct_answer)) # Track skipped answers.
             continue
         
         # Check answer
@@ -85,6 +88,7 @@ def practice_session(words, direction='swedish-english'):
         else:
             print(f"❌ Incorrect. The correct answer is: {correct_answer}")
             incorrect_count += 1
+            wrong_answers.append((question, user_answer, correct_answer)) # track wrong answers
     
     # Show final results
     answered = correct_count + incorrect_count
@@ -97,6 +101,16 @@ def practice_session(words, direction='swedish-english'):
     print(f"Correct answers: {correct_count}")
     print(f"Incorrect answers: {incorrect_count}")
     print(f"Score: {percentage:.1f}%")
+    
+    if wrong_answers:
+        print("\n--- ❌ WRONG ANSWERS ---")
+        for question, your_answer, correct in wrong_answers:
+            print(f"  '{question}' → You said: '{your_answer}' | Correct: '{correct}'")
+
+    if skipped_answers:
+        print("\n--- ⏭ SKIPPED ANSWERS ---")
+        for question, correct in skipped_answers:
+            print(f"  '{question}' → Correct answer: '{correct}'")
     print("="*50 + "\n")
     
 def print_title_box():
